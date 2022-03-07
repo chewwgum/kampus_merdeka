@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kalkulator Aini</title>
+    <link rel="stylesheet" type="text/css" href="../tugas6_js_2_Nurul Aini_Amikom Yogyakarta/style.css" />
+</head>
+
+<body>
+    <form id="formulir" align="center">
+        <table class="tabel"></table>
+        <h1 align="center">Calculator</h1>
+        <hr/><br>
+        Angka 1 <input type="text" name="a1" onfocus="kosong1()" value="Masukan angka pertama" id="a" /> &nbsp; &nbsp;
+        Angka 2 <input type="text" name="a2" onfocus="kosong2()" value="Masukan angka kedua" id="a"/> <br/><br/>
+        Hasil  <input type="text" name="hasil" value="0" disabled id="hasil"/> <br/><br>
+        <input class="tombol" type="button" name="tambah" onclick="Htambah()" value="+" />
+        <input class="tombol" type="button" name="kurang" onclick="Hkurang()" value="-" />
+        <input class="tombol" type="button" name="kali" onclick="Hkali()" value="x" />
+        <input class="tombol" type="button" name="bagi" onclick="Hbagi()" value="/" />
+        <input class="tombol" type="button" name="pangkat" onclick="Hpangkat()" value="^" />
+        <input class="batal" type="button" name="batal" onclick="kosongAll()" value="Batal" />
+    </table>
+    </form>
+</table>
+</body>
+<script src="../tugas6_js_2_Nurul Aini_Amikom Yogyakarta/skrip.js"></script>
+
+</html>
