@@ -1,0 +1,50 @@
+<body bgcolor="CadetBlue" align="justify">
+<script>
+    class Gempa{
+
+        constructor(skala, lokasi){
+            this.rasio = skala;
+            this.letak = lokasi;
+
+        }
+        dampak(){
+            let gempa;
+            if(this.rasio >= 0 && this.rasio <= 2)  gempa = "Dampak gempa tidak terasa";
+            else if(this.rasio > 2  && this.rasio <= 4) gempa = "Dampak gempa ratak - ratak";
+            else if(this.rasio > 4 && this.rasio <= 6) gempa = "Dampak gempa bangunan roboh";
+            else if(this.rasio > 6) gempa = "Berpotensi tsunami"; 
+            else gempa = "Tidak terjadi gempa";
+                
+            document.write(`
+            lokasi Gempa : ${this.letak}
+            <br/> Skala Gempa : ${this.rasio}
+            <br/>Dampak Gempa : ${gempa}<hr/>`);
+ 
+    
+        }
+    }
+
+                let data1 = new Gempa(3.4,'Korea' );
+                let data2 = new Gempa(3.0,'Jepang' );
+                let data3 = new Gempa(4.1,'China' );
+                let data4 = new Gempa(5.5,'Canada');
+                let data5 = new Gempa(3.8,'Chicago',);
+                let data6 = new Gempa(4.9,'Thailand');
+                let data7 = new Gempa(3.5,'London');
+                let data8 = new Gempa(5.8,'Gempa kota Gyeongju');
+                let data9 = new Gempa(4.9,'Gempa kota Jeju');
+                let data10 = new Gempa(6.6,'Gempa Sumur, Banten');
+
+           
+                    data1.dampak();
+                    data2.dampak();
+                    data3.dampak();
+                    data4.dampak();
+                    data5.dampak();
+                    data6.dampak();
+                    data7.dampak();
+                    data8.dampak();
+                    data9.dampak();
+                    data10.dampak();
+</script>
+</body>
