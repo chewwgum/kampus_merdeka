@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas 1 Aini</title>
+    <script src="jquery.js"></script>
+    <script>
+        $("document").ready(function () {
+            $(".angsa").click(function () {
+                $(this).css({
+                    background: "url('image/angsa.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/angsa.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".badak").click(function () {
+                $(this).css({
+                    background: "url('image/badak.jpg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/badak.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".kucing").click(function () {
+                $(this).css({
+                    background: "url('image/kucing.jpeg')"
+
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/kucing.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+        $("document").ready(function () {
+            $(".burung").click(function () {
+                $(this).css({
+                    background: "url('image/burung-hantu.jpeg')"
+                });
+                $("<audio></audio>").attr({
+                    src: 'audio/burung-hantu.mp3',
+                    autoplay: 'autoplay'
+                })
+            });
+        });
+    </script>
+    <style type="text/css">
+        .angsa,
+        .badak,
+        .kucing,
+        .burung {
+            background: #FFEBCD;
+            width: 180px;
+            height: 180px;
+            cursor: pointer;
+        }
+
+        .cover {
+            margin: 5px;
+            border: 2px solid #ccc;
+            float: left;
+            width: 180px;
+            height: 220;
+
+
+        }
+
+        .desc {
+            padding: 25px;
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        .box {
+            margin-left: 21%;
+        }
+
+        p {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: 'Lucida Sans';
+            font-size: 30px;
+        }
+
+        .clear {
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <p>
+Animal
+    </p>
+    <hr>
+    <div class="box">
+        <div class="cover">
+            <div class="angsa"></div>
+            <div class="desc">angsa</div>
+        </div>
+        <div class="cover">
+            <div class="badak"></div>
+            <div class="desc">badak</div>
+        </div>
+        <div class="cover">
+            <div class="kucing"></div>
+            <div class="desc">kucing</div>
+        </div>
+        <div class="cover">
+            <div class="burung"></div>
+            <div class="desc">b.hantu</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
